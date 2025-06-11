@@ -1,0 +1,24 @@
+FILE_NAME cl.fil
+~.05/28/2025 18:15:09 AccountsReceivable CLASSIFY ON CustomerNo ACCUMULATE Amount GROUPBY CustomerNo TO "Piutang Per Customer" OPEN PRESORT TOP ALL
+~Input : Records:299         Control Total:0
+~Output: Records:36          Control Total:0
+~:CLASSIFY:AccountsReceivable:CustomerNo
+~.05/28/2025 18:34:59 Piutang_Per_Customer OPEN Customer_Credit_Limit SECONDARY
+~.05/28/2025 18:34:59 Piutang_Per_Customer JOIN PRIMARY PKEY CustomerNo FIELDS ALL SKEY CustomerNo WITH ALL TO "cl" OPEN PRESORT SECSORT
+~Input : Records:36          Control Total:0                    
+~Output: Records:36          Control Total:0                    
+[FILESIZE] 36
+[LASTVIEW] "cl"
+[FILTER] Amount > Credit_max
+[SERVER] LOCAL
+[UTF8]
+[VERSION] 1
+RECORD_LENGTH 86
+CustomerNo                      UTF16       1  12    
+CustomerNo2                     UTF16      13  12    
+Count                           ARBUTUS    25  12 0 PICTURE "999,999,999" WIDTH 8  
+COUNT_PERCENTAGE                ARBUTUS    37  12 2 AS "Percent;of Count" WIDTH 8  
+FIELD_PERCENTAGE                ARBUTUS    49  12 2 AS "Percent;of Field" WIDTH 8  
+Amount                          ARBUTUS    61  12 0  
+CustomerNo3                     UTF8       73   6    
+Credit_max                      PRINT      79   8 0 DECIMAL '.'  

@@ -1,0 +1,6 @@
+[SKIP] 0
+[TLINES] 1
+[RLINES] 1
+[LINE] 1
+CustomerNo             WIDTH 16
+Credit_max             WIDTH 16

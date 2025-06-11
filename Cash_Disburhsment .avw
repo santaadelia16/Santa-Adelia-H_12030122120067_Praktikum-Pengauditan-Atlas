@@ -1,0 +1,8 @@
+[SKIP] 0
+[TLINES] 1
+[RLINES] 1
+[LINE] 1
+Posting_Date           WIDTH 16
+Voucher_Number         WIDTH 18
+Paid_to_vendor         WIDTH 16
+Amount_Credit          WIDTH 26

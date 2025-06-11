@@ -1,0 +1,24 @@
+FILE_NAME Sheet1.FIL
+~Table Imported via OpenXML Excel 05/06/2025 09:07:38
+~.05/06/2025 09:07:54 _ IMPORT OPENEXCEL TO Cash_GL FILE "C:\Users\USer\Documents\PRAKDIT\OneDrive_2025-03-03\Realsa data\Cash GL.xlsx" TABLE "Sheet1" SERVER "LOCAL" FLAT "C:\Users\USer\Documents\Arbutus\Sheet1.FIL" FIELDS "Posting Date","Voucher Number","Voucher  Description","Account Number","Amount Debit","Amount Credit","Balance" END 
+[FILESIZE] 100
+[LASTVIEW] "Cash_GL"
+[REFRESH] OPENEXCEL FILE "C:\Users\USer\Documents\PRAKDIT\OneDrive_2025-03-03\Realsa data\Cash GL.xlsx" TABLE "Sheet1" SERVER "LOCAL" FLAT "C:\Users\USer\Documents\Arbutus\Sheet1.FIL" FIELDS "Posting Date","Voucher Number","Voucher  Description","Account Number","Amount Debit","Amount Credit","Balance" END
+[SERVER] LOCAL
+[DELIMITED] 0 9 0
+[UTF8]
+[VERSION] 1
+RECORD_LENGTH 150
+Posting_Date                    DATETIME    1  10   PICTURE "yyyy-mm-dd" NATIVE [D]  
+Voucher_Number                  PRINT      11   5 0 DECIMAL '.' NATIVE [D]  
+Voucher__Description            UTF8       16  10   NATIVE [D]  
+Account_Number                  PRINT      26   3 0 DECIMAL '.' NATIVE [D]  
+Amount_Debit                    PRINT      29   9 0 DECIMAL '.' NATIVE [D]  
+Amount_Credit                   PRINT      38   9 0 DECIMAL '.' NATIVE [D]  
+Balance                         PRINT      47   9 0 DECIMAL '.' NATIVE [D]  
+Status_Control                  COMPUTED            AS "Status Control"  
+ #C 4 7
+ "Level 1" IF Between( Amount_Credit , 20000000 , 50000000 )
+ "Level 2" IF Between( Amount_Credit , 50000000 , 100000000 )
+ "Level 3" IF Amount_Credit > 100000000
+ "None"

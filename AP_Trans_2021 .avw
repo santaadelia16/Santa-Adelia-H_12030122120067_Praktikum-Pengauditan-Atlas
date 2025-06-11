@@ -1,0 +1,10 @@
+[SKIP] 0
+[TLINES] 1
+[RLINES] 1
+[LINE] 1
+Vendor_No              WIDTH 14
+Invoice_No             WIDTH 12
+Invoice_Date           WIDTH 15
+Due_date              
+Prodno                 WIDTH 10
+Invoice_Amount         WIDTH 21

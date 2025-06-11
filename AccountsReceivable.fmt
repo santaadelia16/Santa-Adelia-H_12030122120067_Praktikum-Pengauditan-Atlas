@@ -1,0 +1,25 @@
+FILE_NAME Realsa\AccountsReceivable.FIL
+[FILESIZE] 299
+[LASTVIEW] "AccountsReceivable"
+[FILTER] age(DueDate,"20211231")>=181  AND age(DueDate,"20211231")<=10000
+[FILTER] age(DueDate,"20211231")>=151  AND age(DueDate,"20211231")<=180
+[FILTER] age(DueDate,"20211231")>=31  AND age(DueDate,"20211231")<=60
+[FILTER] Amount < 0
+[FILTER] Piutang_Minus
+[FILTER] Piutang_Minus1
+[REFRESH] OPENEXCEL FILE "C:\Users\USer\Documents\PRAKDIT\OneDrive_2025-03-03\Realsa data\AR.xlsx" TABLE "AccountsReceivable" SERVER "LOCAL" FLAT "C:\Users\USer\Documents\Arbutus\Realsa\AccountsReceivable.FIL" FIELDS "InvoiceDate","CustomerNo","DueDate","Amount" END
+[SERVER] LOCAL
+[DELIMITED] 0 9 0
+[UTF8]
+[VERSION] 1
+RECORD_LENGTH 89
+InvoiceDate                     DATETIME    1  10   PICTURE "yyyy-mm-dd" NATIVE [D]  
+CustomerNo                      UTF8       11   6   NATIVE [D]  
+DueDate                         DATETIME   17  10   PICTURE "yyyy-mm-dd" NATIVE [D]  
+Amount                          PRINT      27   7 0 DECIMAL '.' NATIVE [D]  
+Piutang_Minus                   COMPUTED            HIDDEN  
+ #L 1
+ Amount < 0
+Piutang_Minus1                  COMPUTED            HIDDEN  
+ #L 1
+ Amount < 0

@@ -1,0 +1,10 @@
+[SKIP] 0
+[TLINES] 2
+[RLINES] 1
+[LINE] 1
+CustomerNo             WIDTH 14
+Count                 
+COUNT_PERCENTAGE      
+FIELD_PERCENTAGE      
+Amount                 WIDTH 19
+Credit_max            

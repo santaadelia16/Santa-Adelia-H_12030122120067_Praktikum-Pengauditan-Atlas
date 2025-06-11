@@ -1,0 +1,20 @@
+FILE_NAME AP_Trans_2021.FIL
+~Table Imported via OpenXML Excel 05/09/2025 17:13:52
+~.05/09/2025 17:13:52 _ IMPORT OPENEXCEL TO AP_Trans_2021 FILE "C:\Users\USer\Documents\PRAKDIT\OneDrive_2025-03-03\Realsa data\Account Payable.xlsx" TABLE "AP_Trans_2021" SERVER "LOCAL" FLAT "C:\Users\USer\Documents\Arbutus\AP_Trans_2021.FIL" FIELDS "Vendor_No","Invoice_No","Invoice_Date","Due date","Prodno","Invoice_Amount" END 
+[FILESIZE] 127
+[LASTVIEW] "AP_Trans_2021"
+[FILTER] Invoice_No="8753401 "
+[FILTER] Invoice_No="519383  "
+[FILTER] Invoice_No="8753401"
+[REFRESH] OPENEXCEL FILE "C:\Users\USer\Documents\PRAKDIT\OneDrive_2025-03-03\Realsa data\Account Payable.xlsx" TABLE "AP_Trans_2021" SERVER "LOCAL" FLAT "C:\Users\USer\Documents\Arbutus\AP_Trans_2021.FIL" FIELDS "Vendor_No","Invoice_No","Invoice_Date","Due date","Prodno","Invoice_Amount" END
+[SERVER] LOCAL
+[DELIMITED] 0 9 0
+[UTF8]
+[VERSION] 1
+RECORD_LENGTH 116
+Vendor_No                       PRINT       1   5 0 DECIMAL '.' NATIVE [D]  
+Invoice_No                      UTF8        6   8   NATIVE [D]  
+Invoice_Date                    DATETIME   14  10   PICTURE "yyyy-mm-dd" NATIVE [D]  
+Due_date                        DATETIME   24  10   PICTURE "yyyy-mm-dd" NATIVE [D]  
+Prodno                          UTF8       34   9   NATIVE [D]  
+Invoice_Amount                  PRINT      43   9 0 DECIMAL '.' NATIVE [D]  

@@ -1,0 +1,19 @@
+FILE_NAME Account Payable.fil
+~Table Imported via OpenXML Excel 05/09/2025 17:13:52
+~.05/09/2025 17:13:52 _ IMPORT OPENEXCEL TO AP_Trans_2021 FILE "C:\Users\USer\Documents\PRAKDIT\OneDrive_2025-03-03\Realsa data\Account Payable.xlsx" TABLE "AP_Trans_2021" SERVER "LOCAL" FLAT "C:\Users\USer\Documents\Arbutus\AP_Trans_2021.FIL" FIELDS "Vendor_No","Invoice_No","Invoice_Date","Due date","Prodno","Invoice_Amount" END
+~.05/09/2025 17:19:14 AP_Trans_2021 OPEN Cash_Disburhsment SECONDARY
+~.05/09/2025 17:19:14 AP_Trans_2021 JOIN UNMATCHED PKEY Invoice_Amount FIELDS ALL SKEY Amount_Credit TO "Account Payable" OPEN PRESORT SECSORT
+~Input : Records:127         Control Total:0                    
+~Output: Records:28          Control Total:0                    
+[FILESIZE] 28
+[LASTVIEW] "Account_Payable"
+[SERVER] LOCAL
+[UTF8]
+[VERSION] 1
+RECORD_LENGTH 51
+Vendor_No                       PRINT       1   5 0 DECIMAL '.'  
+Invoice_No                      UTF8        6   8    
+Invoice_Date                    DATETIME   14  10   PICTURE "yyyy-mm-dd"  
+Due_date                        DATETIME   24  10   PICTURE "yyyy-mm-dd"  
+Prodno                          UTF8       34   9    
+Invoice_Amount                  PRINT      43   9 0 DECIMAL '.'  

@@ -1,0 +1,15 @@
+FILE_NAME Cash Disburhsment.FIL
+~Table Imported via OpenXML Excel 05/09/2025 17:15:09
+~.05/09/2025 17:15:22 _ IMPORT OPENEXCEL TO Cash_Disburhsment FILE "C:\Users\USer\Documents\PRAKDIT\OneDrive_2025-03-03\Realsa data\Cash Disbursement.xlsx" TABLE "Sheet1" SERVER "LOCAL" FLAT "C:\Users\USer\Documents\Arbutus\Cash Disburhsment.FIL" FIELDS "Posting Date","Voucher Number","Paid to vendor","Amount Credit" END 
+[FILESIZE] 99
+[LASTVIEW] "Cash_Disburhsment"
+[REFRESH] OPENEXCEL FILE "C:\Users\USer\Documents\PRAKDIT\OneDrive_2025-03-03\Realsa data\Cash Disbursement.xlsx" TABLE "Sheet1" SERVER "LOCAL" FLAT "C:\Users\USer\Documents\Arbutus\Cash Disburhsment.FIL" FIELDS "Posting Date","Voucher Number","Paid to vendor","Amount Credit" END
+[SERVER] LOCAL
+[DELIMITED] 0 9 0
+[UTF8]
+[VERSION] 1
+RECORD_LENGTH 108
+Posting_Date                    DATETIME    1  10   PICTURE "yyyy-mm-dd" NATIVE [D]  
+Voucher_Number                  PRINT      11   5 0 DECIMAL '.' NATIVE [D]  
+Paid_to_vendor                  PRINT      16   5 0 DECIMAL '.' NATIVE [D]  
+Amount_Credit                   PRINT      21   9 0 DECIMAL '.' NATIVE [D]  
